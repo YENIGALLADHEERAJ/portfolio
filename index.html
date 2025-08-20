@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yenigalla Dheeraj | Portfolio</title>
+  <style>
+    /* General Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    a {
+      text-decoration: none;
+      color: #00eaff;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    header img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 3px solid #00eaff;
+      object-fit: cover;
+    }
+
+    header .title {
+      text-align: left;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+
+    header h2 {
+      font-size: 1.2rem;
+      color: #bbb;
+      margin-top: 10px;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h3 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      border-left: 5px solid #00eaff;
+      padding-left: 10px;
+    }
+
+    .about, .skills, .projects, .experience, .education, .contact {
+      margin-bottom: 50px;
+      background: rgba(255,255,255,0.05);
+      padding: 20px;
+      border-radius: 12px;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    /* Floating Cursor */
+    .cursor {
+      width: 20px;
+      height: 20px;
+      border: 2px solid #00eaff;
+      border-radius: 50%;
+      position: fixed;
+      pointer-events: none;
+      transform: translate(-50%, -50%);
+      transition: transform 0.15s ease-out;
+      z-index: 1000;
+    }
+  </style>
+</head>
+<body>
+  <div class="cursor"></div>
+
+  <header>
+    <img src="https://via.placeholder.com/120" alt="Profile Picture">
+    <div class="title">
+      <h1>Yenigalla Dheeraj</h1>
+      <h2>Tech Enthusiast | CS Student</h2>
+    </div>
+  </header>
+
+  <section class="about">
+    <h3>About Me</h3>
+    <p>Second-year CS student at SRMIST KTR, passionate about building clean, responsive web projects and strengthening core CS fundamentals. Quick learner with strong problem-solving abilities, focused on front-end engineering, OOP, and DSA.</p>
+  </section>
+
+  <section class="skills">
+    <h3>Skills</h3>
+    <ul>
+      <li>C</li>
+      <li>C++</li>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Learning DSA</li>
+    </ul>
+  </section>
+
+  <section class="projects">
+    <h3>Projects</h3>
+    <p><strong>Mini Website (Static):</strong> HTML, CSS, JavaScript, Bootstrap<br>
+    Responsive, mobile-friendly pages without any database; semantic HTML and accessible components.</p>
+  </section>
+
+  <section class="experience">
+    <h3>Experience</h3>
+    <p>No formal work experience yet; actively building projects and practicing DSA/OOP.</p>
+  </section>
+
+  <section class="education">
+    <h3>Education</h3>
+    <ul>
+      <li><strong>2024 - 2028:</strong> B-Tech, SRM Institute of Science and Technology, Kattankulathur</li>
+      <li><strong>2022 - 2024:</strong> 12th Grade, Narayana Junior College, Vijayawada</li>
+      <li><strong>2021 - 2022:</strong> 10th Grade, Narayana High School, Vijayawada</li>
+    </ul>
+  </section>
+
+  <section class="contact">
+    <h3>Contact</h3>
+    <p><strong>Phone:</strong> +91-9581113387</p>
+    <p><strong>Email:</strong> <a href="mailto:dheerayenigalla@gmail.com">dheerayenigalla@gmail.com</a></p>
+    <p><strong>Address:</strong> Qr no E 25,TGGenco,A colony, Pylon, Nagarjuna Sagar, Nalgonda, Telangana, 508202</p>
+  </section>
+
+  <script>
+    // Floating cursor effect
+    const cursor = document.querySelector('.cursor');
+    document.addEventListener('mousemove', e => {
+      cursor.style.top = e.clientY + 'px';
+      cursor.style.left = e.clientX + 'px';
+    });
+
+    document.addEventListener('mousedown', () => {
+      cursor.style.transform = 'translate(-50%, -50%) scale(0.7)';
+    });
+    document.addEventListener('mouseup', () => {
+      cursor.style.transform = 'translate(-50%, -50%) scale(1)';
+    });
+  </script>
+</body>
+</html>
